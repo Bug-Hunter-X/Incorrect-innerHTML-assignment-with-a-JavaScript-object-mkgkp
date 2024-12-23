@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    const myObject = {message: "Hello"};
+    // Correct: Convert the object to a string before assigning to innerHTML
+    document.getElementById("myDiv").innerHTML = JSON.stringify(myObject);
+    //Alternative using textContent
+    //document.getElementById("myDiv").textContent = JSON.stringify(myObject);
+  </script>
+</body>
+</html>
